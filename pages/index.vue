@@ -1,6 +1,9 @@
 
 <template>
-  <section class="container">
+  <div>
+  <thenavbar/>
+  <hero/>
+  <section class="container">   
       <logo/>
       <h1 class="title">
         NUXT
@@ -12,16 +15,20 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
-    </div>
   </section>
+  </div>
 </template>
 
 <script>
 import Logo from '~components/Logo.vue'
+import thenavbar from '~components/the-navbar.vue'
+import hero from '~components/hero.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    thenavbar,
+    hero
   }
 }
 </script>
